@@ -11,7 +11,21 @@
                     20 yo
                 </strong>
             </p>
-          <p>TODO</p>
+          <p>
+              <vue-typer
+                :text='["Software Engineering aspirant","Computer Engineering student","Agile and UX and design lover"," Software Development Intern","self-taught person"]'
+                :repeat='Infinity'
+                :shuffle='true'
+                initial-action='typing'
+                :pre-type-delay='70'
+                :type-delay='70'
+                :pre-erase-delay='3000'
+                :erase-delay='100'
+                erase-style='backspace'
+                :erase-on-complete='true'
+                caret-animation='smooth'
+                ></vue-typer>
+          </p>
           <p>from
               <strong class="middle-blue-font">
                   São Paulo, Brazil
@@ -23,8 +37,11 @@
 
 
 <script>
+import { VueTyper } from 'vue-typer'
 export default {
-  
+    components: {
+        'vue-typer': VueTyper
+    }
 }
 </script>
 
@@ -45,5 +62,11 @@ export default {
         align-items: center;
         text-align: center;
         justify-content: center;
+    }
+
+    .vue-typer {
+        width: 10px;
+        font-size: 1em;
+        background-color: #1DA1EB;
     }
 </style>

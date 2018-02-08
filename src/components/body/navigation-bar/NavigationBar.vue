@@ -1,22 +1,26 @@
 <template>
   <div class="navigation-bar-center navigation-bar-font light-gray-font">
       <header>
-          <p>Navigation Bar</p>
+          <l-language-switch></l-language-switch>
         </header>
   </div>
 </template>
 
 
 <script>
+import LanguageSwitch from './language-switch/LanguageSwitch.vue';
+
 export default {
-  
+  components: {
+      'l-language-switch': LanguageSwitch
+  }
 }
 </script>
 
 <style scoped>
     .navigation-bar-font {
-        font-family: 'Coda', 'Arial',monospace;
-        font-size: 1em;
+        font-family: 'Coda', 'Arial', monospace;
+        font-size: 0.5em;
     }
 
     .navigation-bar-center {

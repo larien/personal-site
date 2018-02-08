@@ -1,10 +1,10 @@
 <template>
   <div>
       <p>
-                <a href="mailto:lauren.ferremch@gmail.com" title="Mail me!"><strong><i class="fa fa-envelope"></i></strong></a>
-                <a href="https://www.linkedin.com/in/lauren-ferreira-9836914b/" title="My professional experiences and courses"><strong><i class="fa fa-linkedin"></i></strong></a>
-                <a href="https://github.com/laurenmariaferreira" title="More of my coding projects"><strong><i class="fa fa-github"></i></strong></a>
-                <a href="http://www.twitter.com/larienmf" title="Come see my tweets!"><strong><i class="fa fa-twitter"></i></strong></a>
+                <a href="mailto:lauren.ferremch@gmail.com" title="Mail me!" target="_blank"><strong><i class="fa fa-envelope"></i></strong></a>
+                <a href="https://www.linkedin.com/in/lauren-ferreira-9836914b/" title="My professional experiences and courses" target="_blank"><strong><i class="fa fa-linkedin"></i></strong></a>
+                <a href="https://github.com/laurenmariaferreira" title="More of my coding projects" target="_blank"><strong><i class="fa fa-github"></i></strong></a>
+                <a href="http://www.twitter.com/larienmf" title="Come see my tweets!" target="_blank"><strong><i class="fa fa-twitter"></i></strong></a>
         </p>
     
   </div>
@@ -18,6 +18,7 @@ export default {
   
 }
 </script>
+
 
 <style scoped>
     .fa {

@@ -1,137 +1,92 @@
 <template>
-       <div class="container">
-
-		<div class="switch white">
-
-			<input type="radio" name="switch" id="switch-off">
-			<input type="radio" name="switch" id="switch-on" checked>
-
-			<label for="switch-off">BR</label>
-			<label for="switch-on">EN</label>
-
-			<span class="toggle"></span>
-
-		</div>
-
-	</div>
+    <label class="switch">
+        <input :class="classes" type="checkbox" :checked="checked" :name="name" :disabled="disabled" v-model="value">
+        <span><slot></slot></span>
+    </label>
 </template>
 
-
 <script>
-export default {
-
-}
+    export default {
+        props: {
+            disabled: Boolean,
+            classes: String,
+            checked: Boolean,
+            name: String
+        },
+        data() {
+            return {
+                value: null
+            }
+        },
+        beforeMount() {
+            this.value = this.checked
+        },
+        mounted() {
+            this.$emit('input', this.value)
+        },
+        watch: {
+            value(val) {
+                this.$emit('input', val)
+            },
+            checked (val) {
+                this.value = val
+            }
+        }
+    }
 </script>
 
-<style scoped>
-    
-body {
-	background: #4a4a4a;
-	color: #151515;
-	font: 100%/1.5em "Lato", sans-serif;
-	margin: 0;
-}
-
-input {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: normal;
-    margin: 0;
-}
-
-input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
-}
-
-/* ---------- SWITCH ---------- */
-
-.container {
-	height: 10%;
-	left: 95%;
-	position: absolute;
-	top: 90%;
-	width: 10%;
-}
-
-.switch {
-	background: #808F9A;
-	border-radius: 32px;
-	display: block;
-	height: 32px;
-	position: relative;
-	width: 80px;
-}
-
-.switch label {
-	color: #fff;
-	font-size: 20px;
-	font-weight: 50;
-	line-height: 32px;
-	text-transform: uppercase;
-	-webkit-transition: color .2s ease;
-	-moz-transition: color .2s ease;
-	-ms-transition: color .2s ease;
-	-o-transition: color .2s ease;
-	transition: color .2s ease;
-	width: 50px;
-}
-
-.switch label:nth-of-type(1) {
-	left: -75%;
-	position: absolute;
-	text-align: right;
-}
-
-.switch label:nth-of-type(2) {
-	position: absolute;
-  right: -75%;
-	text-align: left;
-}
-
-.switch input {
-	height: 64px;
-	left: 0;
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	width: 160px;
-	z-index: 2;
-}
-
-.switch input:checked~label:nth-of-type(1) { color: #fff; }
-.switch input:checked~label:nth-of-type(2) { color: #808F9A; }
-
-.switch input~:checked~label:nth-of-type(1) { color: #808F9A; }
-.switch input~:checked~label:nth-of-type(2) { color: #fff; }
-
-.switch input:checked~.toggle {
-	left: 5%;
-}
-
-.switch input~:checked~.toggle {
-	left: 60%;
-}
-
-.switch input:checked {
-	z-index: 0;
-}
-
-.toggle {
-	background: #1B2836;
-	border-radius: 50%;
-	height: 80%;
-	left: 0;
-	position: absolute;
-	top: 3px;
-	-webkit-transition: left .2s ease;
-	-moz-transition: left .2s ease;
-	-ms-transition: left .2s ease;
-	-o-transition: left .2s ease;
-	transition: left .2s ease;
-	width: 35%;
-	z-index: 1;
-}
+<style lang="scss">
+    label.switch {
+        input[type="checkbox"] {
+            display: none;
+            &:checked {
+                + span {
+                    &:before {
+                        background-color: rgba(#808F9A, 0.5);
+                    }
+                    &:after {
+                        background-color: #808F9A;
+                        transform: translate(80%, -50%);
+                    }
+                }
+            }
+            + span {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+				top: 0;
+				height: 50px;
+				left:90%;
+                &:before,
+                &:after {
+                    content: '';
+                    cursor: pointer;
+                    position: absolute;
+                    margin: 0;
+                    outline: 0;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    transition: all 200ms ease-out;
+                }
+                &:before {
+                    left: 1px;
+                    width: 34px;
+                    height: 14px;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    border-radius: 8px;
+                }
+                &:after {
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 50%;
+                    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .14), 0 2px 2px 0 rgba(0, 0, 0, .098), 0 1px 5px 0 rgba(0, 0, 0, .084);
+                }
+            }
+            &:checked + span &:after {
+                transform: translate(80%, -50%);
+            }
+        }
+    }
 </style>
-    
-   

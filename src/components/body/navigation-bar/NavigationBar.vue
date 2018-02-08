@@ -1,7 +1,7 @@
 <template>
   <div class="navigation-bar-center navigation-bar-font light-gray-font">
       <header>
-          <l-language-switch></l-language-switch>
+          <!-- <p><l-language-switch></l-language-switch></p> -->
         </header>
   </div>
 </template>
@@ -17,18 +17,19 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .navigation-bar-font {
-        font-family: 'Coda', 'Arial', monospace;
-        font-size: 0.5em;
-    }
+        font: {
+            family: 'Coda', 'Arial', monospace;
+            size: 0.5em;
+        }
+    }    
 
     .navigation-bar-center {
         position: fixed;
-        padding-top: 1%;
         left: 0;
         top: 0;
-        width: 95%;
-        text-align: right;
+        width: 100%;
+        height: 10%;
     }
 </style>

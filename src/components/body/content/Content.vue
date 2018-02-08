@@ -49,16 +49,16 @@ export default {
 
     .content-font {
         font-family: 'Coda', monospace;
-        font-size: 0.9em;
-        line-height: 0.4;
+        font-size: 2em;
+        line-height: 140%;
     }
 
     .content-center {
-        margin-top: 5%;
-        height: 70%;
-        width: 100%;
+        padding: 15% 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
         display: flex;
-        position: fixed;
+        position: center;
         align-items: center;
         text-align: center;
         justify-content: center;
@@ -66,7 +66,6 @@ export default {
 
     .vue-typer {
         width: 10px;
-        font-size: 1em;
         background-color: #1DA1EB;
     }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="social-media">
       <p>
                 <a href="mailto:lauren.ferremch@gmail.com" title="Mail me!" target="_blank"><strong><i class="fa fa-envelope"></i></strong></a>
                 <a href="https://www.linkedin.com/in/lauren-ferreira-9836914b/" title="My professional experiences and courses" target="_blank"><strong><i class="fa fa-linkedin"></i></strong></a>
@@ -21,10 +21,14 @@ export default {
 
 
 <style scoped>
+
+    .social-media {
+        padding: 15px;
+    }
+
     .fa {
     padding: 10px;
-    font-size: 20px;
-    width: 20px;
+    width: 1.5%;
     text-align: center;
     border-radius: 10%;
     background: #1B2836;

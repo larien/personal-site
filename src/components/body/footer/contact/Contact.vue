@@ -1,12 +1,13 @@
 <template>
-  <div class="social-media">
-      <p>
+  <div class="l-contact">
+      <div></div>
+      <div class="social-media">
                 <a href="mailto:lauren.ferremch@gmail.com" title="Mail me!" target="_blank"><strong><i class="fa fa-envelope"></i></strong></a>
                 <a href="https://www.linkedin.com/in/lauren-ferreira-9836914b/" title="My professional experiences and courses" target="_blank"><strong><i class="fa fa-linkedin"></i></strong></a>
                 <a href="https://github.com/laurenmariaferreira" title="More of my coding projects" target="_blank"><strong><i class="fa fa-github"></i></strong></a>
                 <a href="http://www.twitter.com/larienmf" title="Come see my tweets!" target="_blank"><strong><i class="fa fa-twitter"></i></strong></a>
-        </p>
-    
+        </div>
+        <div></div>
   </div>
 
   
@@ -21,15 +22,23 @@ export default {
 
 
 <style scoped>
+    .l-contact {
+
+    }
 
     .social-media {
-        padding: 15px;
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center;
+    margin:auto;
+    justify-content: center;
     }
 
     .fa {
-    padding: 10px;
-    width: 1.5%;
-    text-align: center;
+    margin: 5px;
+    padding: 4px;
+    align-self: center;
+    justify-self: center;
     border-radius: 10%;
     background: #1B2836;
     color: #808F9A;

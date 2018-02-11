@@ -1,7 +1,7 @@
 <template>
   <div class="navigation-bar-center navigation-bar-font light-gray-font">
       <header>
-          <!-- <p><l-language-switch></l-language-switch></p> -->
+          <p><l-language-switch></l-language-switch></p>
         </header>
   </div>
 </template>
@@ -21,15 +21,10 @@ export default {
     .navigation-bar-font {
         font: {
             family: 'Coda', 'Arial', monospace;
-            size: 0.5em;
         }
     }    
 
     .navigation-bar-center {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 10%;
+
     }
 </style>

@@ -1,9 +1,8 @@
 <template>
-  <div id="l-body">
-
-    <l-footer class="light-gray-font"></l-footer>
-    <l-content class="light-white-font"></l-content>
-    <l-navigation-bar class="light-gray-font"></l-navigation-bar>
+  <div class="l-body">
+    <l-navigation-bar class="l-header light-gray-font"></l-navigation-bar>
+    <l-content class=" l-content light-white-font"></l-content>
+    <l-footer class="l-footer light-gray-font"></l-footer>
   </div>
 </template>
 
@@ -11,7 +10,6 @@
 import Content from './content/Content.vue';
 import Footer from './footer/Footer.vue';
 import NavigationBar from './navigation-bar/NavigationBar.vue';
-
 
 export default {
   components: {
@@ -34,6 +32,29 @@ export default {
 
     .middle-blue-font {
         color: #1DA1EB;
+    }
+
+    .l-body {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      height: 100vh;
+    }
+
+    .l-header {
+      grid-column: 1 / -1;
+      background-color: rgb(212, 26, 26);
+      overflow:auto;
+    }
+
+    .l-content {
+      background-color: rgb(31, 28, 224);
+    }
+
+    .l-footer {
+      display: grid;
+      grid-column: 1 / -1;
+      background-color: rgb(36, 173, 18);
+      overflow:auto;
     }
 
 </style>

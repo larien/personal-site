@@ -22,10 +22,6 @@ export default {
     }
 
     .footer-center {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-        height:10%;
+
     }
 </style>

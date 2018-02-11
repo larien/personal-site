@@ -36,24 +36,25 @@ export default {
 
     .l-body {
       display: grid;
-      grid-template-rows: auto 1fr auto;
+      grid-template-rows: 10vh auto 10vh;
       height: 100vh;
     }
 
     .l-header {
       grid-column: 1 / -1;
       overflow:auto;
-      height: 30px;
+      height: 100%;
     }
 
     .l-content {
+      height: 80%;
     }
 
     .l-footer {
       display: grid;
       grid-column: 1 / -1;
       overflow:auto;
-      height: 30px;
+      height: 100%;
     }
 
 </style>

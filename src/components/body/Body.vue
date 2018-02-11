@@ -44,6 +44,7 @@ export default {
       grid-column: 1 / -1;
       background-color: rgb(212, 26, 26);
       overflow:auto;
+      height: 30px;
     }
 
     .l-content {
@@ -55,6 +56,7 @@ export default {
       grid-column: 1 / -1;
       background-color: rgb(36, 173, 18);
       overflow:auto;
+      height: 30px;
     }
 
 </style>

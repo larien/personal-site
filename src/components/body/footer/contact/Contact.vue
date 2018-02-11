@@ -22,10 +22,6 @@ export default {
 
 
 <style scoped>
-    .l-contact {
-
-    }
-
     .social-media {
     display:flex;
     flex-wrap:wrap;
@@ -37,8 +33,6 @@ export default {
     .fa {
     margin: 5px;
     padding: 4px;
-    align-self: center;
-    justify-self: center;
     border-radius: 10%;
     background: #1B2836;
     color: #808F9A;

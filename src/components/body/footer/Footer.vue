@@ -22,6 +22,8 @@ export default {
     }
 
     .footer-center {
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>

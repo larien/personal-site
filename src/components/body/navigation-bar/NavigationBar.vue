@@ -25,6 +25,8 @@ export default {
     }    
 
     .navigation-bar-center {
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>

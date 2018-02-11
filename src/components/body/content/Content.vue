@@ -1,6 +1,7 @@
 <template>
   <div class="content-font content-center">
       <h1>
+          <div v-if="languageSelector">
           <p>Howdy!</p>
           <p>My name is
               <strong class="middle-blue-font">
@@ -31,6 +32,42 @@
                   São Paulo, Brazil
                 </strong>.
             </p>
+        </div>
+        <div v-else>
+          <p>Olá!</p>
+          <p>Meu nome é
+              <strong class="middle-blue-font">
+                  Lauren
+                </strong>
+                .
+            </p>
+            <p>Tenho
+                <strong class="middle-blue-font">
+                  20 anos
+                </strong>
+                e sou uma
+            </p>
+          <p>
+              <vue-typer
+                :text='["futura Engenheira de Software","estudante de Engenharia de Computação","amante de Agile, UX e design","pessoa autodidata"]'
+                :repeat='Infinity'
+                :shuffle='true'
+                initial-action='typing'
+                :pre-type-delay='70'
+                :type-delay='70'
+                :pre-erase-delay='3000'
+                :erase-delay='100'
+                erase-style='backspace'
+                :erase-on-complete='true'
+                caret-animation='smooth'
+                ></vue-typer>
+          </p>
+          <p>de
+              <strong class="middle-blue-font">
+                  São Paulo, Brasil
+                </strong>.
+            </p>
+            </div>
 </h1>
   </div>
 </template>
@@ -41,6 +78,11 @@ import { VueTyper } from 'vue-typer'
 export default {
     components: {
         'vue-typer': VueTyper
+    },
+     data() {
+      return {
+         languageSelector: false
+      }
     }
 }
 </script>

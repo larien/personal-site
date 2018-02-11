@@ -42,19 +42,16 @@ export default {
 
     .l-header {
       grid-column: 1 / -1;
-      background-color: rgb(212, 26, 26);
       overflow:auto;
       height: 30px;
     }
 
     .l-content {
-      background-color: rgb(31, 28, 224);
     }
 
     .l-footer {
       display: grid;
       grid-column: 1 / -1;
-      background-color: rgb(36, 173, 18);
       overflow:auto;
       height: 30px;
     }

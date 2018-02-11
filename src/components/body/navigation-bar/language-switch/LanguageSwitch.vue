@@ -42,10 +42,10 @@
             &:checked {
                 + span {
                     &:before {
-                        background-color: rgba(#808F9A, 0.5);
+                        background-color: rgba(#1DA1EB, 0.5);
                     }
                     &:after {
-                        background-color: #808F9A;
+                        background-color: #007FEB;
                         transform: translate(80%, -50%);
                     }
                 }
@@ -54,9 +54,10 @@
                 position: relative;
                 display: inline-block;
                 cursor: pointer;
-				top: 0;
-				height: 50px;
-				left:90%;
+                font-weight: 500;
+                text-align: left;
+                margin: 0px;
+                padding: 0px 44px;
                 &:before,
                 &:after {
                     content: '';
@@ -72,16 +73,16 @@
                     left: 1px;
                     width: 34px;
                     height: 14px;
-                    background-color: rgba(0, 0, 0, 0.2);
+                    background-color:rgba(#808F9A, 0.5);
                     border-radius: 8px;
                 }
                 &:after {
                     left: 0;
                     width: 20px;
                     height: 20px;
-                    background-color: rgba(0, 0, 0, 0.5);
+                    background-color: #808F9A;
                     border-radius: 50%;
-                    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .14), 0 2px 2px 0 rgba(0, 0, 0, .098), 0 1px 5px 0 rgba(0, 0, 0, .084);
+                    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .098), 0 1px 5px 0 rgba(0, 0, 0, .084);
                 }
             }
             &:checked + span &:after {

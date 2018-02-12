@@ -19,7 +19,7 @@
             }
         },
         beforeMount() {
-            this.value = this.checked
+            this.value = !this.checked
         },
         mounted() {
             this.$emit('input', this.value)

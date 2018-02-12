@@ -33,18 +33,14 @@
                 ></vue-typer>
           </p>
           <p>from
-              <strong class="middle-blue-font">
-                  São Paulo, Brazil
-                </strong>.
+              <strong class="middle-blue-font">São Paulo, Brazil</strong>.
             </p>
         </div>
         <div v-else>
           <p>Olá!</p>
           <p>Meu nome é
               <strong class="middle-blue-font">
-                  Lauren
-                </strong>
-                .
+                  Lauren</strong>.
             </p>
             <p>Tenho
                 <strong class="middle-blue-font">
@@ -72,9 +68,7 @@
                 ></vue-typer>
           </p>
           <p>de
-              <strong class="middle-blue-font">
-                  São Paulo, Brasil
-                </strong>.
+              <strong class="middle-blue-font">São Paulo, Brasil</strong>.
             </p>
             </div>
 </h1>

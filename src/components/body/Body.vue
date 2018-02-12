@@ -36,7 +36,7 @@ export default {
 
     .l-body {
       display: grid;
-      grid-template-rows: 10vh auto 10vh;
+      grid-template-rows: 50px auto 50px;
       height: 100vh;
     }
 
@@ -47,7 +47,7 @@ export default {
     }
 
     .l-content {
-      height: 80%;
+      height: 100%;
     }
 
     .l-footer {
@@ -60,7 +60,8 @@ export default {
 @media (max-width: 700px) 
 {
   .l-content{
-    padding: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
   }
 }
 

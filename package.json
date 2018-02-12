@@ -31,6 +31,7 @@
     "node-sass": "^4.5.3",
     "push-dir": "^0.4.1",
     "sass-loader": "^6.0.6",
+    "vue-gh-pages": "^1.8.8",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",

@@ -1,11 +1,57 @@
 <template>
   <div class="l-contact">
       <div></div>
-      <div class="social-media">
-                <a href="mailto:lauren.ferremch@gmail.com" title="Mail me!" target="_blank"><strong><i class="fa fa-envelope"></i></strong></a>
-                <a href="https://www.linkedin.com/in/lauren-ferreira-9836914b/" title="My professional experiences and courses" target="_blank"><strong><i class="fa fa-linkedin"></i></strong></a>
-                <a href="https://github.com/laurenmariaferreira" title="More of my coding projects" target="_blank"><strong><i class="fa fa-github"></i></strong></a>
-                <a href="http://www.twitter.com/larienmf" title="Come see my tweets!" target="_blank"><strong><i class="fa fa-twitter"></i></strong></a>
+      <div v-if="!languageSelector" class="social-media">
+                <a
+                class="fa fa-envelope"
+                title="Mail me!"
+                href="mailto:lauren.ferremch@gmail.com"
+                target="_blank"
+                ><strong><i></i></strong></a>
+                <a
+                class="fa fa-linkedin"
+                title="My professional experiences and courses"
+                href="https://www.linkedin.com/in/lauren-ferreira-9836914b/"
+                target="_blank"
+                ><strong><i></i></strong></a>
+                <a
+                class="fa fa-github"
+                title="More of my coding projects"
+                href="https://github.com/laurenmariaferreira"
+                target="_blank"
+                ><strong><i></i></strong></a>
+                <a
+                class="fa fa-twitter"
+                title="Come see my tweets!"
+                href="http://www.twitter.com/larienmf"
+                target="_blank"
+                ><strong><i></i></strong></a>
+        </div>
+        <div v-else class="social-media">
+                <a
+                class="fa fa-envelope"
+                title="Me envie um e-mail!"
+                href="mailto:lauren.ferremch@gmail.com"
+                target="_blank"
+                ><strong><i></i></strong></a>
+                <a
+                class="fa fa-linkedin"
+                title="Minhas experiências profissionais e certificações"
+                href="https://www.linkedin.com/in/lauren-ferreira-9836914b/"
+                target="_blank"
+                ><strong><i></i></strong></a>
+                <a
+                class="fa fa-github"
+                title="Mais projetos desenvolvidos por mim"
+                href="https://github.com/laurenmariaferreira"
+                target="_blank"
+                ><strong><i></i></strong></a>
+                <a
+                class="fa fa-twitter"
+                title="Acompanhe meus tweets!"
+                href="http://www.twitter.com/larienmf"
+                target="_blank"
+                ><strong><i></i></strong></a>
         </div>
         <div></div>
   </div>
@@ -13,10 +59,24 @@
   
 </template>
 
-
 <script>
+import EventBus from '../../../../eventbus.js';
 export default {
-  
+  data() {
+      return {
+         languageSelector: false,
+      }
+    },
+    created() {
+    EventBus.$on('change_language', () => {
+        this.changeLanguage()
+    })
+    },
+        methods: {
+    changeLanguage(){
+        this.languageSelector = !this.languageSelector;
+    }
+}
 }
 </script>
 
@@ -30,13 +90,14 @@ export default {
     justify-content: center;
     }
 
-    .fa {
+    a {
     margin: 5px;
-    padding: 5px;
+    padding: 8px;
     border-radius: 10%;
     background: #1B2836;
     color: #808F9A;
     transition: border 0.1s, color 0.3s, background 0.3s;
+    text-decoration: none;
     }
 
     .fa-envelope:hover {

@@ -74,16 +74,29 @@
 
 
 <script>
-import { VueTyper } from 'vue-typer'
+import { VueTyper } from 'vue-typer';
+import EventBus from '../../../eventbus.js';
+
 export default {
     components: {
         'vue-typer': VueTyper
     },
      data() {
       return {
-         languageSelector: false
+         languageSelector: true
       }
+    },
+    created() {
+    EventBus.$on('change_language', () => {
+        this.changeLanguage()
+    });
+},
+methods: {
+    changeLanguage(){
+        this.languageSelector = !this.languageSelector;
     }
+}
+   
 }
 </script>
 

@@ -58,7 +58,7 @@
                 " estudante de Engenharia de Computação ",
                 " amante de Agile, UX e design ",
                 " mulher autodidata ",
-                " muito fã da Korra "]'
+                " fangirl da Korra "]'
                 :repeat='Infinity'
                 :shuffle='true'
                 initial-action='typing'

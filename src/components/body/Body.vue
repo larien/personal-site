@@ -57,4 +57,12 @@ export default {
       height: 100%;
     }
 
+@media (max-width: 700px) 
+{
+  .l-content{
+    padding: 10%;
+  }
+}
+
+
 </style>

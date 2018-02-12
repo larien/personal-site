@@ -60,16 +60,10 @@ export default {
 
 @media (max-width: 700px) 
 {
-  .l-header {
-    height: 20%;
-  }
   .l-content{
     padding-right: 10%;
     padding-left: 10%;
     height: auto;
-  }
-  .l-footer {
-    height: 20%;
   }
 }
 

@@ -49,12 +49,4 @@ export default {
         text-align: right;
         margin-right: 0px;
     }
-
-    @media (max-width: 700px) 
-{
-  .navigation-bar-center{
-      height:100%
-  }
-}
-
 </style>

@@ -9,18 +9,23 @@
                 </strong>
                 and I'm a
                 <strong class="middle-blue-font">
-                    20 yo
+                    {{ calcAge }} yo
                 </strong>
             </p>
           <p>
               <vue-typer
-                :text='["Software Engineering aspirant","Computer Engineering student","Agile and UX and design lover"," Software Development Intern","self-taught person"]'
+                :text='[" Software Engineering aspirant ",
+                " Computer Engineering student ",
+                " Agile, UX and design lover ",
+                " Software Development Intern ",
+                " self-taught person ",
+                " Korra fangirl "]'
                 :repeat='Infinity'
                 :shuffle='true'
                 initial-action='typing'
-                :pre-type-delay='70'
-                :type-delay='70'
-                :pre-erase-delay='3000'
+                :pre-type-delay='50'
+                :type-delay='50'
+                :pre-erase-delay='2000'
                 :erase-delay='100'
                 erase-style='backspace'
                 :erase-on-complete='true'
@@ -43,13 +48,17 @@
             </p>
             <p>Tenho
                 <strong class="middle-blue-font">
-                  20 anos
+                  {{ calcAge }} anos
                 </strong>
                 e sou uma
             </p>
           <p>
               <vue-typer
-                :text='["futura Engenheira de Software","estudante de Engenharia de Computação","amante de Agile, UX e design","pessoa autodidata"]'
+                :text='[" futura Engenheira de Software ",
+                " estudante de Engenharia de Computação ",
+                " amante de Agile, UX e design ",
+                " mulher autodidata ",
+                " muito fã da Korra "]'
                 :repeat='Infinity'
                 :shuffle='true'
                 initial-action='typing'
@@ -83,13 +92,34 @@ export default {
     },
      data() {
       return {
-         languageSelector: true
+         languageSelector: true,
       }
     },
     created() {
     EventBus.$on('change_language', () => {
         this.changeLanguage()
-    });
+    })
+},
+computed: {
+    calcAge: function () {
+    var y = 1997, m = 8, d = 5;
+
+    var date = new Date,
+        aa = date.getFullYear(),
+        ma = date.getMonth() + 1,
+        da = date.getDate(),
+
+        y = +y,
+        m = +m,
+        d = +d,
+        idade = aa - y;
+
+    if (ma < m || ma == m && da < d) {
+            idade--;
+    }
+    
+    return idade < 0 ? 0 : idade;
+    }
 },
 methods: {
     changeLanguage(){

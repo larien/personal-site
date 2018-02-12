@@ -1,6 +1,6 @@
 <template>
   <div class="footer-center">
-      <footer class="footer-font">
+      <footer class="footer-font footer-size">
           <l-contact></l-contact>
         </footer>
   </div>
@@ -26,4 +26,11 @@ export default {
         justify-content: center;
         align-items: center;
     }
+
+    @media (max-width: 700px) 
+{
+  .footer-size{
+      height:100%
+  }
+}
 </style>

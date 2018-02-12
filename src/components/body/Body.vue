@@ -47,7 +47,7 @@ export default {
     }
 
     .l-content {
-      height: 100%;
+      height: 80vh;
     }
 
     .l-footer {
@@ -55,13 +55,21 @@ export default {
       grid-column: 1 / -1;
       overflow:auto;
       height: 100%;
+      position: relative;
     }
 
 @media (max-width: 700px) 
 {
+  .l-header {
+    height: 20%;
+  }
   .l-content{
     padding-right: 10%;
     padding-left: 10%;
+    height: auto;
+  }
+  .l-footer {
+    height: 20%;
   }
 }
 

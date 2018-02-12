@@ -53,10 +53,13 @@
                 target="_blank"
                 ><strong><i></i></strong></a>
         </div>
-        <div></div>
+        <div v-if="!languageSelector" class="version">
+            <p title="2.2 Version number">v2.2</p>
+        </div>
+        <div v-else class="version">
+            <p title="2.2 Inserção do número de versão">v2.2</p>
+        </div>
   </div>
-
-  
 </template>
 
 <script>
@@ -118,5 +121,13 @@ export default {
     .fa-twitter:hover {
     background: #55ACEE;
     color: white;
+    }
+
+    .version {
+        position: absolute;
+        font-size: 10px;
+        color: #808F9A;
+        bottom: 0;
+        right: 0;
     }
 </style>

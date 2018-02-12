@@ -1,7 +1,7 @@
 <template>
   <div class="content-font content-center">
       <h1>
-          <div v-if="languageSelector">
+          <div v-if="!languageSelector">
           <p>Howdy!</p>
           <p>My name is
               <strong class="middle-blue-font">
@@ -92,7 +92,7 @@ export default {
     },
      data() {
       return {
-         languageSelector: true,
+         languageSelector: false,
       }
     },
     created() {

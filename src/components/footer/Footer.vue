@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-    /* .footer-font {
+    .footer-font {
         font-family: 'Coda', 'Arial', monospace;
     }
 
@@ -25,5 +25,5 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-    } */
+    }
 </style>

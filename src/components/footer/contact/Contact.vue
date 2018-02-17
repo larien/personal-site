@@ -30,7 +30,7 @@
         <div v-else class="social-media">
                 <a
                 class="fa fa-envelope"
-                title="Me envie um e-mail!"
+                title="Mande-me um e-mail!"
                 href="mailto:lauren.ferremch@gmail.com"
                 target="_blank"
                 ><strong><i></i></strong></a>
@@ -54,10 +54,10 @@
                 ><strong><i></i></strong></a>
         </div>
         <div v-if="!languageSelector" class="version">
-            <p title="2.2 Version number">v2.2</p>
+            <p title="2.3 Logo and layout refactoring">v2.3</p>
         </div>
         <div v-else class="version">
-            <p title="2.2 Inserção do número de versão">v2.2</p>
+            <p title="2.3 Inserção do logo e refatoração no layout">v2.3</p>
         </div>
   </div>
 </template>
@@ -85,7 +85,7 @@ export default {
 
 
 <style scoped>
-    /* .social-media {
+    .social-media {
     display:flex;
     flex-wrap:wrap;
     text-align:center;
@@ -94,8 +94,27 @@ export default {
     }
 
     a {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10%;
+    background: #1B2836;
+    color: #808F9A;
+    transition: border 0.1s, color 0.3s, background 0.3s;
+    text-decoration: none;
+    }
+
+    .version {
+        position: absolute;
+        font-size: 10px;
+        color: #808F9A;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    @media (min-height: 600px) and (min-width: 800px) {
+    a {
     margin: 5px;
-    padding: 8px;
+    padding: 10px;
     border-radius: 10%;
     background: #1B2836;
     color: #808F9A;
@@ -122,24 +141,5 @@ export default {
     background: #55ACEE;
     color: white;
     }
-
-    .version {
-        position: absolute;
-        font-size: 10px;
-        color: #808F9A;
-        bottom: 0;
-        right: 0;
-    } */
-
-    @media (max-width: 700px) 
-{
-  /* .fa {
-    padding: 15px;
-    border-radius: 10%;
-    background: #1B2836;
-    color: #808F9A;
-    transition: border 0.1s, color 0.3s, background 0.3s;
-    text-decoration: none;
-  } */
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-center">
+  <div id="l-footer" class="footer-center">
       <footer class="footer-font footer-size">
           <l-contact></l-contact>
         </footer>

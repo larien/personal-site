@@ -1,11 +1,10 @@
 <template>
-  <div class="navigation-bar-center navigation-bar-font light-gray-font">
-      <header>
-          <p><l-language-switch classes="is-warning" v-model="value" checked>{{text}}</l-language-switch></p>
-        </header>
+  <div id="l-nav-bar" class="navigation-bar-center navigation-bar-font light-gray-font">
+
+    <l-language-switch classes="is-warning" v-model="value" checked>{{text}}</l-language-switch>
+
   </div>
 </template>
-
 
 <script>
 import LanguageSwitch from './language-switch/LanguageSwitch.vue';

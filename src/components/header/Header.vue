@@ -1,7 +1,7 @@
 <template>
   <div id="l-header">
 
-	<a class="logo" href='https://svgshare.com/s/5Zd' ><img src='https://svgshare.com/i/5Zd.svg' title='Logo'/></a>
+	<a class="logo"><img src='https://svgshare.com/i/5Zd.svg' title='Logo'/></a>
     <l-nav-bar class="switch"></l-nav-bar>
 
   </div>

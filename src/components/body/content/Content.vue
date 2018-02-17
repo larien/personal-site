@@ -126,18 +126,17 @@ methods: {
 
 <style scoped>
 
-    /* .content-font {
+    .content-font {
         font-family: 'Coda', monospace;
         text-align: center;
         line-height: 130%;
-        font-size: 4vh;
-    } */
+        font-size: 20px;
+    }
 
-    .content-center {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    @media (min-width: 700px) {
+        .content-font {
+            font-size: 30px;
+        }
     }
 
     .vue-typer {

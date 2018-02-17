@@ -46,7 +46,7 @@ html {
 }
 
 #l-app {
-  min-height: 480px;
+  min-height: 360;
   height: 100vh;
   display: flex;
   flex-direction: column;

@@ -17,17 +17,12 @@ export default {
 </script>
 
 <style lang="scss">
-.l-content {
-  height: 80vh;
-}
 
-@media (max-width: 700px) 
-{
-  .l-content{
-    padding-right: 10%;
-    padding-left: 10%;
-    height: auto;
-  }
+.l-body {
+  // background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 </style>

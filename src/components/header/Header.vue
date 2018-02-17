@@ -1,7 +1,7 @@
 <template>
   <div id="l-header">
 
-	<!-- <img src="resources/logo.svg"> -->
+	<img src="../../resources/logo.svg" alt="Logo da Lauren">
     <l-nav-bar class="switch"></l-nav-bar>
 
   </div>
@@ -27,19 +27,22 @@ export default {
 
     .switch{
         position: absolute;
+        top: 10px;
+        right: 5px;
+    }
+
+    img{
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
         top: 15px;
-        right: 10px;
+        left: 15px;
     }
 
     @media (min-height: 600px) and (min-width: 800px){
         .switch{
             top: 10px;
         }
-    }
-
-    .logo img{
-        display: block;
-        width: 50px;
-        height: 50px;
     }
 </style>

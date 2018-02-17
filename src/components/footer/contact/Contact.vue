@@ -85,7 +85,7 @@ export default {
 
 
 <style scoped>
-    .social-media {
+    /* .social-media {
     display:flex;
     flex-wrap:wrap;
     text-align:center;
@@ -129,17 +129,17 @@ export default {
         color: #808F9A;
         bottom: 0;
         right: 0;
-    }
+    } */
 
     @media (max-width: 700px) 
 {
-  .fa {
+  /* .fa {
     padding: 15px;
     border-radius: 10%;
     background: #1B2836;
     color: #808F9A;
     transition: border 0.1s, color 0.3s, background 0.3s;
     text-decoration: none;
-  }
+  } */
 }
 </style>

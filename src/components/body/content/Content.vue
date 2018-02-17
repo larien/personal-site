@@ -126,12 +126,12 @@ methods: {
 
 <style scoped>
 
-    .content-font {
+    /* .content-font {
         font-family: 'Coda', monospace;
         text-align: center;
         line-height: 130%;
         font-size: 4vh;
-    }
+    } */
 
     .content-center {
         display: flex;

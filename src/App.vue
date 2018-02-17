@@ -39,21 +39,58 @@ html {
     background-color: #1B2836;
 }
 
-.l-body {
-  display: grid;
-  grid-template-rows: 50px auto 50px;
-  height: 100vh;
-}
 .l-header {
-  grid-column: 1 / -1;
-  overflow:auto;
-  height: 100%;
+  height: 70px;
+  flex-shrink: 0;
+  background-color: rgb(233, 18, 18);
 }
+
+#l-app {
+  min-height: 480px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(248, 232, 1);
+}
+
+.l-body {
+  flex: auto 1 0;
+  margin: 50px 10px;
+  background-color: rgb(155, 163, 44);
+}
+
 .l-footer {
-  display: grid;
-  grid-column: 1 / -1;
-  overflow:auto;
-  height: 100%;
-  position: relative;
+  height: 70px;
+  flex-shrink: 0;
+  background-color: rgb(25, 150, 8);
+}
+
+@media (min-width: 600px) {
+  #l-app {
+    height: calc(100%-100px);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(226, 30, 184);
+  }
+  .l-body {
+    margin: 0;
+  }
+
+  .l-header {
+    height: 50px;
+  }
+
+  .l-footer {
+    height: 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #l-app {
+    height: calc(100vh-100px);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(166, 201, 152);
+  }
 }
 </style>

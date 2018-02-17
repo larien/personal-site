@@ -42,7 +42,6 @@ html {
 .l-header {
   height: 70px;
   flex-shrink: 0;
-  background-color: rgb(233, 18, 18);
 }
 
 #l-app {
@@ -50,19 +49,16 @@ html {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: rgb(248, 232, 1);
 }
 
 .l-body {
   flex: auto 1 0;
   margin: 50px 10px;
-  background-color: rgb(155, 163, 44);
 }
 
 .l-footer {
   height: 70px;
   flex-shrink: 0;
-  background-color: rgb(25, 150, 8);
 }
 
 @media (min-width: 600px) {
@@ -70,7 +66,6 @@ html {
     height: calc(100%-100px);
     display: flex;
     flex-direction: column;
-    background-color: rgb(226, 30, 184);
   }
   .l-body {
     margin: 0;
@@ -90,7 +85,6 @@ html {
     height: calc(100vh-100px);
     display: flex;
     flex-direction: column;
-    background-color: rgb(166, 201, 152);
   }
 }
 </style>

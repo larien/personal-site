@@ -1,5 +1,5 @@
 <template>
-  <div id="l-content" class="content-font content-center">
+  <div id="l-content" class="content-font content-center light-white-font">
       <h1>
           <div v-if="!languageSelector">
           <p>Howdy!</p>

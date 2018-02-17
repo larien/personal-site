@@ -55,9 +55,9 @@
                 display: inline-block;
                 cursor: pointer;
                 font-weight: 500;
-                text-align: left;
+                text-align: right;
                 margin: 0px;
-                padding: 0px 44px;
+                padding: 0px 0px 0px 44px;
                 &:before,
                 &:after {
                     content: '';

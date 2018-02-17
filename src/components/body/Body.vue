@@ -1,7 +1,7 @@
 <template>
   <div id="l-body">
     
-    <l-content class="l-content light-white-font"></l-content>
+    <l-content></l-content>
   
   </div>
 </template>
@@ -18,8 +18,7 @@ export default {
 
 <style lang="scss">
 
-.l-body {
-  // background-color: #fff;
+#l-body {
   display: flex;
   flex-direction: column;
   justify-content: center;

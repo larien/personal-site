@@ -99,7 +99,6 @@ export default {
     border-radius: 10%;
     background: #1B2836;
     color: #808F9A;
-    transition: border 0.1s, color 0.3s, background 0.3s;
     text-decoration: none;
     }
 
@@ -110,6 +109,26 @@ export default {
         bottom: 5px;
         right: 5px;
     }
+
+    /* .fa-envelope {
+    background: #A3333D;
+    color: white;
+    }
+
+    .fa-github {
+    background: #111111;
+    color: white;
+    }
+
+    .fa-linkedin {
+    background: #0077B5;
+    color: white;
+    }
+
+    .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    } */
 
     @media (min-height: 600px) and (min-width: 800px) {
     a {

@@ -1,5 +1,5 @@
 <template>
-  <div id="l-nav-bar" class="navigation-bar-center navigation-bar-font light-gray-font">
+  <div id="l-nav-bar" class="light-white-font">
 
     <l-language-switch classes="is-warning" v-model="value" checked>{{text}}</l-language-switch>
 
@@ -35,17 +35,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    .navigation-bar-font {
+    #l-nav-bar {
         font: {
             family: 'Coda', 'Arial', monospace;
         }
     }    
-
-    .navigation-bar-center {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: right;
-        margin-right: 0px;
-    }
 </style>

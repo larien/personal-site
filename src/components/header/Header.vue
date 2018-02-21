@@ -1,7 +1,7 @@
 <template>
   <div id="l-header">
 
-	<a class="logo"><img src='https://svgshare.com/i/5Zd.svg' title='Logo'/></a>
+	<a class="logo"><img src='https://svgshare.com/i/5Zd.svg' title='I´m the Avatar and you gotta deal with it!'/></a>
     <l-nav-bar class="switch"></l-nav-bar>
 
   </div>

@@ -1,6 +1,8 @@
 <template>
   <div class="l-contact">
-      <div></div>
+      <div class="copyright">
+            <p>&copy; 2018 Lauren Ferreira</p>
+        </div>
       <div v-if="!languageSelector" class="social-media">
                 <a
                 class="fa fa-envelope"
@@ -54,10 +56,10 @@
                 ><strong><i></i></strong></a>
         </div>
         <div v-if="!languageSelector" class="version">
-            <p title="2.3 Logo and layout refactoring">v2.3</p>
+            <p title="2.4 Direitos, titles e ícone">v2.4</p>
         </div>
         <div v-else class="version">
-            <p title="2.3 Inserção do logo e refatoração no layout">v2.3</p>
+            <p title="2.4 Copyright, titles and favicon">v2.4</p>
         </div>
   </div>
 </template>
@@ -90,6 +92,7 @@ export default {
     flex-wrap:wrap;
     text-align:center;
     margin:auto;
+    margin-bottom: 15px;
     justify-content: center;
     }
 
@@ -110,23 +113,31 @@ export default {
         right: 5px;
     }
 
-    /* .fa-envelope {
-    background: #A3333D;
-    color: white;
+    .copyright {
+        position: absolute;
+        font-size: 10px;
+        color: #808F9A;
+        bottom: 5px;
+        left: 5px;
+    }
+
+    /*  .fa-envelope {
+    background: #808F9A;
+    color: #1B2836;
     }
 
     .fa-github {
-    background: #111111;
+    background: #808F9A;
     color: white;
     }
 
     .fa-linkedin {
-    background: #0077B5;
+    background: #1DA1EB;
     color: white;
     }
 
     .fa-twitter {
-    background: #55ACEE;
+    background: #1DA1EB;
     color: white;
     } */
 
@@ -139,6 +150,11 @@ export default {
     color: #808F9A;
     transition: border 0.1s, color 0.3s, background 0.3s;
     text-decoration: none;
+    }
+
+    .fa {
+    background: #1B2836;
+    color: #808F9A;
     }
 
     .fa-envelope:hover {

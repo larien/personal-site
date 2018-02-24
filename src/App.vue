@@ -53,12 +53,13 @@ html {
 
 .l-body {
   flex: auto 1 0;
-  margin: 50px 10px;
+  margin: 0px 10px 76px 10px;
 }
 
 .l-footer {
-  height: 70px;
-  flex-shrink: 0;
+  height: 76px;
+  position:absolute;
+  bottom:0;
 }
 
 @media (min-width: 600px) {
@@ -68,7 +69,7 @@ html {
     flex-direction: column;
   }
   .l-body {
-    margin: 0;
+    margin: 0px 10px 56px 10px;
   }
 
   .l-header {
@@ -76,7 +77,7 @@ html {
   }
 
   .l-footer {
-    height: 50px;
+    height: 56px;
   }
 }
 

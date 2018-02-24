@@ -14,11 +14,12 @@
             </p>
           <p>
               <vue-typer
-                :text='[" Software Engineering aspirant ",
+                :text='[" Software Engineering aspiring ",
                 " Computer Engineering student ",
-                " Agile, UX and design lover ",
+                " Agile, UX and design enthusiast ",
                 " Software Development Intern ",
-                " self-taught person ",
+                " self-taught woman ",
+                " amazon in training ",
                 " Korra fangirl "]'
                 :repeat='Infinity'
                 :shuffle='true'
@@ -54,6 +55,7 @@
                 " estudante de Engenharia de Computação ",
                 " amante de Agile, UX e design ",
                 " mulher autodidata ",
+                " amazona em treinamento ",
                 " fangirl da Korra "]'
                 :repeat='Infinity'
                 :shuffle='true'

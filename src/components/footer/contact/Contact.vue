@@ -56,10 +56,10 @@
                 ><strong><i></i></strong></a>
         </div>
         <div v-if="!languageSelector" class="version">
-            <p title="2.4 Direitos, titles e ícone">v2.4</p>
+            <p title="2.5 Layout fixes">v2.5</p>
         </div>
         <div v-else class="version">
-            <p title="2.4 Copyright, titles and favicon">v2.4</p>
+            <p title="2.5 Correções no layout">v2.5</p>
         </div>
   </div>
 </template>
@@ -87,13 +87,20 @@ export default {
 
 
 <style scoped>
+    .l-contact{
+        display:flex;
+        flex-flow: row wrap;
+        height:50px;
+    }
+
     .social-media {
+    order: 1;
     display:flex;
     flex-wrap:wrap;
     text-align:center;
     margin:auto;
-    margin-bottom: 15px;
     justify-content: center;
+    width: 100%;
     }
 
     a {
@@ -106,19 +113,25 @@ export default {
     }
 
     .version {
-        position: absolute;
         font-size: 10px;
         color: #808F9A;
         bottom: 5px;
         right: 5px;
+        order: 3;
+        width: 50%;
+        text-align: right;
+        position: relative;
     }
 
     .copyright {
-        position: absolute;
         font-size: 10px;
         color: #808F9A;
         bottom: 5px;
         left: 5px;
+        order: 2;
+        width: 50%;
+        text-align: left;
+        position: relative;
     }
 
     /*  .fa-envelope {

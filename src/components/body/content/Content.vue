@@ -14,7 +14,7 @@
             </p>
           <p>
               <vue-typer
-                :text='[" Software Engineering aspiring ",
+                :text='[" aspiring Software Engineering ",
                 " Computer Engineering student ",
                 " Agile, UX and design enthusiast ",
                 " Software Development Intern ",
